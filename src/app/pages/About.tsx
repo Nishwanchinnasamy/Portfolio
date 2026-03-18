@@ -106,7 +106,7 @@ export function About() {
                     className="w-full h-full relative"
                   >
                     <img
-                      src="/Portfolio/avatar.png"
+                      src="/avatar.png"
                       alt="Nishwan Chinnasamy"
                       className="w-full h-full object-contain drop-shadow-2xl"
                     />
