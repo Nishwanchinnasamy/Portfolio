@@ -72,14 +72,20 @@ export function Contact() {
           >
             <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
 
-            <form className="space-y-6">
+            <form
+              action="https://formspree.io/f/xojkpgpz"
+              method="POST"
+              className="space-y-6"
+            >
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">
                   Name
                 </label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Your name"
+                  required
                   className="w-full px-4 py-3 bg-white/5 border border-cyan-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 transition-colors"
                 />
               </div>
@@ -90,7 +96,9 @@ export function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="your.email@example.com"
+                  required
                   className="w-full px-4 py-3 bg-white/5 border border-cyan-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 transition-colors"
                 />
               </div>
@@ -101,7 +109,9 @@ export function Contact() {
                 </label>
                 <input
                   type="text"
+                  name="subject"
                   placeholder="Project inquiry"
+                  required
                   className="w-full px-4 py-3 bg-white/5 border border-cyan-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 transition-colors"
                 />
               </div>
@@ -112,7 +122,9 @@ export function Contact() {
                 </label>
                 <textarea
                   rows={5}
+                  name="message"
                   placeholder="Tell me about your project..."
+                  required
                   className="w-full px-4 py-3 bg-white/5 border border-cyan-500/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500/50 transition-colors resize-none"
                 />
               </div>
